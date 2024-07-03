@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ticket Booking</title>
+    <!--Google Fonts and Icons-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Sharp|Material+Icons+Two+Tone"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+      <link rel="stylesheet" href="./styles.css">
+    <style>
+     
+    </style>
+  </head>
+  <body>
+    <div class="center">
+      <div class="tickets">
+        <div class="ticket-selector">
+          <div class="head">
+            <div class="movie-container">
+              <label> Select a movie:</label>
+              <select id="movie">
+                <option value="220">Godzilla vs Kong (RS.220)</option>
+                <option value="320">Kalki 2898AD (RS.320)</option>
+                <option value="250">RRR (RS.250)</option>
+                <option value="260">F9 (RS.260)</option>
+              </select>
+            </div>
+        
+          </div>
+          <ul class="showcase">
+            <li>
+              <div class="seat"></div>
+              <small>Available</small>
+            </li>
+            <li>
+              <div class="seat selected"></div>
+              <small>Selected</small>
+            </li>
+            <li>
+              <div class="seat sold"></div>
+              <small>Sold</small>
+            </li>
+          </ul>
+          <div class="container">
+            <div class="screen"></div>
+      
+            <div class="row">
+              <div class="seat"></div>
+              <label for="A1">A1</label>
+              <div class="seat"></div>
+              <label for="A2">A2</label>
+              <div class="seat"></div>
+              <label for="A3">A3</label>
+              <div class="seat"></div>
+              <label for="A4">A4</label>
+              <div class="seat"></div>
+              <label for="A5">A5</label>
+              <div class="seat"></div>
+              <label for="A6">A6</label>
+              <div class="seat"></div>
+              <label for="A7">A7</label>
+              <div class="seat"></div>
+              <label for="A8">A8</label>
+            </div>
+            
+      
+            <div class="row">
+              <div class="seat"></div>
+              <label for="B1">B1</label>
+              <div class="seat"></div>
+              <label for="B2">B2</label>
+              <div class="seat"></div>
+              <label for="B3">B3</label>
+              <div class="seat sold"></div>
+              <label for="B4">B4</label>
+              <div class="seat sold"></div>
+              <label for="B5">B5</label>
+              <div class="seat"></div>
+              <label for="B6">B6</label>
+              <div class="seat"></div>
+              <label for="B7">B7</label>
+              <div class="seat"></div>
+              <label for="B8">B8</label>
+            </div>
+            <div class="row">
+              <div class="seat"></div>
+              <label for="C1">C1</label>
+              <div class="seat"></div>
+              <label for="C2">C2</label>
+              <div class="seat"></div>
+              <label for="C3">C3</label>
+              <div class="seat"></div>
+              <label for="C4">C4</label>
+              <div class="seat"></div>
+              <label for="C5">C5</label>
+              <div class="seat"></div>
+              <label for="C6">C6</label>
+              <div class="seat sold"></div>
+              <label for="C7">C7</label>
+              <div class="seat sold"></div>
+              <label for="C8">C8</label>
+            </div>
+            <div class="row">
+              <div class="seat"></div>
+              <label for="D1">D1</label>
+              <div class="seat"></div>
+              <label for="D2">D2</label>
+              <div class="seat"></div>
+              <label for="D3">D3</label>
+              <div class="seat"></div>
+              <label for="D4">D4</label>
+              <div class="seat"></div>
+              <label for="D5">D5</label>
+              <div class="seat"></div>
+              <label for="D6">D6</label>
+              <div class="seat"></div>
+              <label for="D7">D7</label>
+              <div class="seat"></div>
+              <label for="D8">D8</label>
+            </div>
+            <div class="row">
+              <div class="seat"></div>
+              <label for="E1">E1</label>
+              <div class="seat"></div>
+              <label for="E2">E2</label>
+              <div class="seat"></div>
+              <label for="E3">E3</label>
+              <div class="seat sold"></div>
+              <label for="E4">E4</label>
+              <div class="seat sold"></div>
+              <label for="E5">E5</label>
+              <div class="seat"></div>
+              <label for="E6">E6</label>
+              <div class="seat"></div>
+              <label for="E7">E7</label>
+              <div class="seat"></div>
+              <label for="E8">E8</label>
+            </div>
+            <div class="row">
+              <div class="seat"></div>
+              <label for="F1">F1</label>
+              <div class="seat"></div>
+              <label for="F2">F2</label>
+              <div class="seat"></div>
+              <label for="F3">F3</label>
+              <div class="seat"></div>
+              <label for="F4">F4</label>
+              <div class="seat sold"></div>
+              <label for="F5">F5</label>
+              <div class="seat sold"></div>
+              <label for="F6">F6</label>
+              <div class="seat sold"></div>
+              <label for="F7">F7</label>
+              <div class="seat"></div>
+              <label for="F8">F8</label>
+            </div>
+          </div>
+          <div class="timings">
+            <div class="dates">
+              <input type="radio" name="date" id="d1" checked />
+              <label for="d1" class="dates-item">
+                <div class="day">Sun</div>
+                <div class="date">11</div>
+              </label>
+              <input type="radio" id="d2" name="date" />
+              <label class="dates-item" for="d2">
+                <div class="day">Mon</div>
+                <div class="date">12</div>
+              </label>
+              <input type="radio" id="d3" name="date" />
+              <label class="dates-item" for="d3">
+                <div class="day">Tue</div>
+                <div class="date">13</div>
+              </label>
+              <input type="radio" id="d4" name="date" />
+              <label class="dates-item" for="d4">
+                <div class="day">Wed</div>
+                <div class="date">14</div>
+              </label>
+              <input type="radio" id="d5" name="date" />
+              <label class="dates-item" for="d5">
+                <div class="day">Thu</div>
+                <div class="date">15</div>
+              </label>
+              <input type="radio" id="d6" name="date" />
+              <label class="dates-item" for="d6">
+                <div class="day">Fri</div>
+                <div class="date">16</div>
+              </label>
+              <input type="radio" id="d7" name="date" />
+              <label class="dates-item" for="d7">
+                <div class="day">Sat</div>
+                <div class="date">17</div>
+              </label>
+            </div>
+            <div class="times">
+              <input type="radio" name="time" id="t1" checked />
+              <label for="t1" class="time">11:00</label>
+              <input type="radio" id="t2" name="time" />
+              <label for="t2" class="time"> 14:30 </label>
+              <input type="radio" id="t3" name="time" />
+              <label for="t3" class="time"> 18:00 </label>
+              <input type="radio" id="t4" name="time" />
+              <label for="t4" class="time"> 21:30 </label>
+            </div>
+          </div>
+        </div>
+        <p class="text">
+          You have selected <span id="count">0</span> seat for a price of RS.<span
+            id="total"
+            >0</span
+          >
+        </p>
+        <div class="book_button">
+            <button type="button">book</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js">
+</script>
+  </body>
+</html>
